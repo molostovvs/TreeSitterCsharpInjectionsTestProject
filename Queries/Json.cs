@@ -63,4 +63,37 @@ public class Json
             }
             """;
     }
+
+    private static void RawInterpolatedStrings()
+    {
+        var status = "success";
+        //language=json
+        var raw1 = $$"""{"status": {{status}}, "code": 200}""";
+
+        var name = "Emma";
+        //language=json
+        var raw2 = $$"""
+            {
+              "person": {
+                "name": {{name}},
+                "age": 28,
+                "hobbies": ["reading", "swimming"]
+              }
+            }
+            """;
+
+        var price = 999.99;
+        var raw3 = string.Empty;
+        //language=json
+        raw3 = $$"""
+            {
+              "product": {
+                "id": "p123",
+                "name": "Laptop",
+                "price": {{price}},
+                "inStock": true
+              }
+            }
+            """;
+    }
 }
