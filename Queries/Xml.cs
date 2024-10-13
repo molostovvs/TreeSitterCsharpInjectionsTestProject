@@ -37,4 +37,42 @@ public class Xml
             </users>
             """;
     }
+
+    private static void RawInterpolatedStrings()
+    {
+        var name = "John Doe";
+        var age = 30;
+        //language=xml
+        var xml1 = $"""
+            <person>
+              <name>{name}</name>
+              <age>{age}</age>
+            </person>
+            """;
+
+        var title = "The Great Gatsby";
+        var author = "F. Scott Fitzgerald";
+        //language=xml
+        var xml2 = $"""
+            <?xml version="1.0" encoding="UTF-8"?>
+            <book>
+              <title>{title}</title>
+              <author>{author}</author>
+              <year>1925</year>
+            </book>
+            """;
+
+        var userId = 1;
+        var email = "alice@example.com";
+        var xml3 = string.Empty;
+        //language=xml
+        xml3 = $"""
+            <users>
+              <user id="{userId}">
+                <name>Alice</name>
+                <email>{email}</email>
+              </user>
+            </users>
+            """;
+    }
 }
