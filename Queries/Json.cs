@@ -2,8 +2,9 @@ namespace Queries;
 
 public class Json
 {
-	public Json()
-	{
+    private static void RawStrings()
+    {
 
-	}
+
+    }
 }
