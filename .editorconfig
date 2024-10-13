@@ -1,5 +1,8 @@
 [*.cs]
 
+indent_style = space
+indent_size = 4
+
 # IDE0008: Use explicit type
 dotnet_diagnostic.IDE0008.severity = none
 
