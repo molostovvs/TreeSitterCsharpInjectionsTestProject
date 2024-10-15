@@ -2,6 +2,38 @@ namespace Queries;
 
 public class Xml
 {
+    private static void QuotedStrings()
+    {
+        //language=xml
+        var string1 = "<person><name>John Doe</name><age>30</age></person>";
+
+        //language=xml
+        string string2 = "<book><title>The Great Gatsby</title><author>F. Scott Fitzgerald</author><year>1925</year></book>";
+
+        //language=xml
+        const string string3 = "<users><user id=\"1\"><name>Alice</name><email>alice@example.com</email></user><user id=\"2\"><name>Bob</name><email>bob@example.com</email></user></users>";
+
+        var string4 = string.Empty;
+        //language=xml
+        string4 = "<autos><auto id=\"1\"><make>Toyota</make><model>Corolla</model><year>2020</year></auto><auto id=\"2\"><make>BMW</make><model>X5</model><year>2019</year></auto></autos>";
+    }
+
+    private static void VerbatimStrings()
+    {
+        //language=xml
+        var string1 = @"<person><name>John Doe</name><age>30</age></person>";
+
+        //language=xml
+        string string2 = @"<book><title>The Great Gatsby</title><author>F. Scott Fitzgerald</author><year>1925</year></book>";
+
+        //language=xml
+        const string string3 = @"<users><user id=""1""><name>Alice</name><email>alice@example.com</email></user><user id=""2""><name>Bob</name><email>bob@example.com</email></user></users>";
+
+        var string4 = string.Empty;
+        //language=xml
+        string4 = @"<autos><auto id=""1""><make>Toyota</make><model>Corolla</model><year>2020</year></auto><auto id=""2""><make>BMW</make><model>X5</model><year>2019</year></auto></autos>";
+    }
+
     private static void RawStrings()
     {
         //language=xml
