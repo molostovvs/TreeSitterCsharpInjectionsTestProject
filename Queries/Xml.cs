@@ -15,11 +15,13 @@ public class Xml
         //language=xml
         var xml2 = """
             <?xml version="1.0" encoding="UTF-8"?>
-            <book>
-              <title>The Great Gatsby</title>
-              <author>F. Scott Fitzgerald</author>
-              <year>1925</year>
-            </book>
+            <books>
+              <book id="1">
+                <title>The Great Gatsby</title>
+                <author>F. Scott Fitzgerald</author>
+                <year>1925</year>
+              </book>
+            </books>
             """;
 
         var xml3 = string.Empty;
